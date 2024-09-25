@@ -27,6 +27,10 @@ body {
   padding: 10px;
 }
 
+.option__options {
+  transition: all 0.3s ease;
+}
+
 .option__options:hover {
   opacity: 0.5;
   cursor: pointer;
@@ -44,6 +48,7 @@ body {
   margin-bottom: 10px;
   margin-right: 20px;
   border: 1px solid rgb(105, 105, 105);
+  transition: all 0.3s ease;
 }
 
 .img__profile:hover {
@@ -60,6 +65,7 @@ body {
   margin-right: 20px;
   background-color: rgb(105, 105, 105);
   border: 1px solid rgb(82, 81, 81);
+  transition: all 0.3s ease;
 }
 
 .register__nav:hover {
@@ -88,7 +94,7 @@ body {
   margin-top: 50px;
   margin-bottom: 30px;
   width: 550px;
-  margin-left: 290px;
+  margin-left: 200px;
   text-align: center;
 }
 
@@ -97,7 +103,7 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  margin-left: 465px;
+  margin-left: 360px;
   border-radius: 10px;
   border: none;
   background-color: rgb(176, 176, 176);
@@ -132,6 +138,7 @@ body {
   width: 80%;
   max-width: 500px;
   border-radius: 10px;
+  margin-top: 100px;
 }
 
 .close {
@@ -151,6 +158,8 @@ body {
 
 input {
   margin-bottom: 20px;
+  padding: 10px;
+  width: 70%;
 }
 
 .close:hover,
@@ -188,6 +197,7 @@ input {
   background-color: rgb(176, 176, 176);
   box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
   margin-bottom: 50px;
+  margin-left: -100px;
 }
 
 .infoPersonal__articles {
@@ -242,7 +252,7 @@ input {
 
 .v-line {
   border-left: 2px solid gray;
-  height: 1206px;
+  height: 1268px;
   left: 60%;
   position: absolute;
 }
