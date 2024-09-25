@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <title>BLOG</title>
+  <link rel="icon" href="./ASSETS/IMG/microblog-brands-solid (1).svg" type="image/x-icon">
+
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./ASSETS/CSS/reset.css">
+  <link rel="stylesheet" href="./ASSETS/CSS/indexStyles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/984cbf0ef7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="nav__header">
+      <div class="tittle__nav">
+        <h1 class="text__tittle">BLOG</h1>
+      </div>
+      <div class="options__nav">
+        <ul class="list__options">
+          <li class="option__options">INICIO</li>
+          <li>-</li>
+          <li class="option__options">FAVORITOS</li>
+        </ul>
+      </div>
+      <div class="profile__nav">
+        <a href="profile.html"><img src="./ASSETS/IMG/profile.jpg" alt="Profile Picture" width="52px"
+            class="img__profile">&nbsp;
+        </a>
+
+        <button class="register__nav" id="registerButton"><i class="fa-solid fa-plus"></i></button>
+
+        <!-- Register Modal -->
+        <div id="registerModal" class="modal">
+          <div class="modal-content">
+            <span class="closeB">&times;</span>
+            <h2>Registro</h2>
+            <form>
+              <label for="firstName">Nombre:</label>
+              <input type="text" id="firstName" name="firstName" required>
+              <label for="lastName">Apellido:</label>
+              <input type="text" id="lastName" name="lastName" required>
+              <label for="email">Correo:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="birthDate">Fecha de Nacimiento:</label>
+              <input type="date" id="birthDate" name="birthDate" required>
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password" required>
+              <button type="submit" class="submitPostButton">Registrar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="content__main">
+      <h2 class="tittle__main">Últimas publicaciones</h2>
+      <button id="newPostButton" class="newPostButton">Nueva Publicación</button>
+
+      <!-- Modal -->
+      <div id="newPostModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Nueva Publicación</h2>
+          <form>
+            <label for="postTitle">Título:</label>
+            <input type="text" id="postTitle" name="postTitle" required>
+            <label for="postDescription">Descripción:</label>
+            <textarea id="postDescription" name="postDescription" required></textarea>
+            <button type="submit" class="submitPostButton">Publicar</button>
+          </form>
+        </div>
+      </div>
+      <div class="publications__main">
+        <article class="articles__main">
+          <div class="infoPersonal__articles">
+            <img src="./ASSETS/IMG/profile.jpg" alt="" width="70px" class="imagen__infoPersonal">
+            <div class="data__infoPersonal">
+              <h2 class="name__data">Juan Jose Vanegas</h2>
+              <a href="" class="user__data">
+                <p>@Juanjose</p>
+              </a>
+            </div>
+            <div class="heart">
+              <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+              <i class="fa-solid fa-thumbs-down" style="color: #000000;"></i>
+            </div>
+          </div>
+          <hr>
+          <div class="infoPublication__articles">
+            <h1 class="tittle__infoPublication">Top mejores cantantes latinos</h1>
+            <p class="description__infoPublication">
+              1. Shakira<br>
+              2. Juanes<br>
+              3. Ricky Martin<br>
+              4. Luis Fonsi<br>
+              5. Marc Anthony
+            </p>
+          </div>
+        </article>
+        <article class="articles__main">
+          <div class="infoPersonal__articles">
+            <img src="./ASSETS/IMG/profile.jpg" alt="" width="70px" class="imagen__infoPersonal">
+            <div class="data__infoPersonal">
+              <h2 class="name__data">Juan Jose Vanegas</h2>
+              <a href="" class="user__data">
+                <p>@Juanjose</p>
+              </a>
+            </div>
+            <div class="heart">
+              <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+              <i class="fa-solid fa-thumbs-down" style="color: #000000;"></i>
+            </div>
+          </div>
+          <hr>
+          <div class="infoPublication__articles">
+            <h1 class="tittle__infoPublication">Top mejores celulares</h1>
+            <p class="description__infoPublication">
+              1. Iphone 13<br>
+              2. Samsung Galaxy S21<br>
+              3. Xiaomi Mi 11<br>
+              4. One Plus 9<br>
+              5. Google Pixel 5
+            </p>
+          </div>
+        </article>
+        <article class="articles__main">
+          <div class="infoPersonal__articles">
+            <img src="./ASSETS/IMG/profile.jpg" alt="" width="70px" class="imagen__infoPersonal">
+            <div class="data__infoPersonal">
+              <h2 class="name__data">Juan Jose Vanegas</h2>
+              <a href="" class="user__data">
+                <p>@Juanjose</p>
+              </a>
+            </div>
+            <div class="heart">
+              <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+              <i class="fa-solid fa-thumbs-down" style="color: #000000;"></i>
+            </div>
+          </div>
+          <hr>
+          <div class="infoPublication__articles">
+            <h1 class="tittle__infoPublication">Top mejores películas de ciencia ficción</h1>
+            <p class="description__infoPublication">
+              1. Blade Runner<br>
+              2. Matrix<br>
+              3. Inception<br>
+              4. Interstellar<br>
+              5. The Terminator
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="v-line">
+    </div>
+
+    <div class="content2__main">
+      <aside class="suggestions__main">
+        <h3 class="tittle__suggestions">Sugerencias</h3>
+        <div class="profiles__suggestions">
+          <article class="profile__suggestions">
+            <img src="./ASSETS/IMG/profile.jpg" alt="" width="77px" class="image__suggestions">
+            <div class="info__suggestions">
+              <h4 class="name__suggestions">Nombre</h4>
+              <p class="username__suggestions">@Usuario</p>
+            </div>
+            <div class="options__suggestions">
+              <button class="follow__button">Seguir</button>
+              <button class="decline__button">Eliminar</button>
+            </div>
+          </article>
+          <hr>
+          <article class="profile__suggestions">
+            <img src="./ASSETS/IMG/profile.jpg" alt="" width="77px" class="image__suggestions">
+            <div class="info__suggestions">
+              <h4 class="name__suggestions">Nombre</h4>
+              <p class="username__suggestions">@Usuario</p>
+            </div>
+            <div class="options__suggestions">
+              <button class="follow__button">Seguir</button>
+              <button class="decline__button">Eliminar</button>
+            </div>
+          </article>
+          <hr>
+          <article class="profile__suggestions">
+            <img src="./ASSETS/IMG/profile.jpg" alt="" width="77px" class="image__suggestions">
+            <div class="info__suggestions">
+              <h4 class="name__suggestions">Nombre</h4>
+              <p class="username__suggestions">@Usuario</p>
+            </div>
+            <div class="options__suggestions">
+              <button class="follow__button">Seguir</button>
+              <button class="decline__button">Eliminar</button>
+            </div>
+          </article>
+        </div>
+      </aside>
+      <aside>
+        <h3 class="tittle__suggestions">Seguidos</h3>
+        <div class="profiles__suggestions">
+          <article class="profile__suggestions">
+            <img src="./ASSETS/IMG/profile.jpg" alt="" width="77px" class="image__suggestions">
+            <div class="info__suggestions">
+              <h4 class="name__suggestions">Nombre</h4>
+              <p class="username__suggestions">@Usuario</p>
+            </div>
+            <div class="options__suggestions">
+              <button class="unfollow__button">Dejar de seguir</button>
+            </div>
+          </article>
+          <hr>
+          <article class="profile__suggestions">
+            <img src="./ASSETS/IMG/profile.jpg" alt="" width="77px" class="image__suggestions">
+            <div class="info__suggestions">
+              <h4 class="name__suggestions">Nombre</h4>
+              <p class="username__suggestions">@Usuario</p>
+            </div>
+            <div class="options__suggestions">
+              <button class="unfollow__button">Dejar de seguir</button>
+            </div>
+          </article>
+          <hr>
+          <article class="profile__suggestions">
+            <img src="./ASSETS/IMG/profile.jpg" alt="" width="77px" class="image__suggestions">
+            <div class="info__suggestions">
+              <h4 class="name__suggestions">Nombre</h4>
+              <p class="username__suggestions">@Usuario</p>
+            </div>
+            <div class="options__suggestions">
+              <button class="unfollow__button">Dejar de seguir</button>
+            </div>
+          </article>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <br><br>
+  <hr>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="rights__footer">TODOS LOS DERECHOS RESERVADOS A JUAN JOSE VANEGAS &copf;</p>
+    <div class="icons__footer">
+      <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+      <a href="https://github.com/Vanegas18" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script defer>
+    const modal = document.getElementById("newPostModal");
+    const btn = document.getElementById("newPostButton");
+    const span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script defer>
+    const registerModal = document.getElementById("registerModal");
+    const registerBtn = document.getElementById("registerButton");
+    const closeRegister = document.getElementsByClassName("closeB")[0];
+
+    registerBtn.onclick = function () {
+      registerModal.style.display = "block";
+    }
+
+    closeRegister.onclick = function () {
+      registerModal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == registerModal) {
+        registerModal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>
