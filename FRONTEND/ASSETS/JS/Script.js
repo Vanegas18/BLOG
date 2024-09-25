@@ -147,3 +147,64 @@ function Registrar(event) {
       });
   }
 }
+
+//! FETCH PARA NUEVA PUBLICACIÓN
+const formPost = document.getElementById("form2");
+
+formPost.addEventListener("submit", Publicar);
+
+function Publicar(event) {
+  event.preventDefault();
+
+  const titulo = document.getElementById("postTitle").value;
+  const contenido = document.getElementById("postDescription").value;
+  let value = true;
+
+  if (contenido === "") {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Debes completar todos los campos",
+    });
+    value = false;
+  }
+
+  if (value) {
+    const publicacion = {
+      titulo,
+      contenido,
+    };
+
+    fetch("/api/Publicaciones", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(publicacion),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Error al publicar la publicación.");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        Swal.fire({
+          title: "Buen trabajo!",
+          text: "Publicación realizada con éxito",
+          icon: "success",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = "index.html";
+          }
+        });
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `Algo salió mal!`,
+        });
+      });
+  }
+}
