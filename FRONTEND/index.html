@@ -38,7 +38,23 @@
             class="img__profile">&nbsp;
         </a>
 
-        <button class="register__nav" id="registerButton"><i class="fa-solid fa-plus"></i></button>
+        <button class="register__nav" id="registerButton"><i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i></button>
+
+        <!-- Login Modal -->
+        <div id="loginModal" class="modal">
+          <div class="modal-content">
+            <span class="closeLogin">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form class="form" id="loginForm">
+              <label for="loginEmail">Correo:</label>
+              <input class="email" type="email" id="loginEmail" name="loginEmail">
+              <label for="loginPassword">Contraseña:</label>
+              <input class="password" type="password" id="loginPassword" name="loginPassword">
+              <button id="loginSubmit" type="submit" class="submitPostButton">Iniciar Sesión</button>
+            </form>
+            <p class="cuentaa">¿No tienes una cuenta? <a href="#" id="openRegisterModal">Regístrate aquí</a></p>
+          </div>
+        </div>
 
         <!-- Register Modal -->
         <div id="registerModal" class="modal">
@@ -50,6 +66,8 @@
               <input class="name" type="text" id="firstName" name="firstName">
               <label for="lastName">Apellido:</label>
               <input class="lastName" type="text" id="lastName" name="lastName">
+              <label for="userName">Usuario:</label>
+              <input class="userName" type="text" id="userName" name="userName">
               <label for="email">Correo:</label>
               <input class="email" type="email" id="email" name="email">
               <label for="birthDate">Fecha de Nacimiento:</label>
@@ -85,8 +103,12 @@
           </form>
         </div>
       </div>
-      <div class="publications__main">
-        <article class="articles__main">
+      <div class="publications__main" id="publications__main">
+        <article class="articles__main" id="articles__main">
+
+        </article>
+
+        <!-- <article class="articles__main">
           <div class="infoPersonal__articles">
             <img src="./ASSETS/IMG/profile.jpg" alt="" width="70px" class="imagen__infoPersonal">
             <div class="data__infoPersonal">
@@ -110,59 +132,7 @@
               4. Luis Fonsi<br>
               5. Marc Anthony
             </p>
-          </div>
-        </article>
-        <article class="articles__main">
-          <div class="infoPersonal__articles">
-            <img src="./ASSETS/IMG/profile.jpg" alt="" width="70px" class="imagen__infoPersonal">
-            <div class="data__infoPersonal">
-              <h2 class="name__data">Juan Jose Vanegas</h2>
-              <a href="" class="user__data">
-                <p>@Juanjose</p>
-              </a>
-            </div>
-            <div class="heart">
-              <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
-              <i class="fa-solid fa-thumbs-down" style="color: #000000;"></i>
-            </div>
-          </div>
-          <hr>
-          <div class="infoPublication__articles">
-            <h1 class="tittle__infoPublication">Top mejores celulares</h1>
-            <p class="description__infoPublication">
-              1. Iphone 13<br>
-              2. Samsung Galaxy S21<br>
-              3. Xiaomi Mi 11<br>
-              4. One Plus 9<br>
-              5. Google Pixel 5
-            </p>
-          </div>
-        </article>
-        <article class="articles__main">
-          <div class="infoPersonal__articles">
-            <img src="./ASSETS/IMG/profile.jpg" alt="" width="70px" class="imagen__infoPersonal">
-            <div class="data__infoPersonal">
-              <h2 class="name__data">Juan Jose Vanegas</h2>
-              <a href="" class="user__data">
-                <p>@Juanjose</p>
-              </a>
-            </div>
-            <div class="heart">
-              <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
-              <i class="fa-solid fa-thumbs-down" style="color: #000000;"></i>
-            </div>
-          </div>
-          <hr>
-          <div class="infoPublication__articles">
-            <h1 class="tittle__infoPublication">Top mejores películas de ciencia ficción</h1>
-            <p class="description__infoPublication">
-              1. Blade Runner<br>
-              2. Matrix<br>
-              3. Inception<br>
-              4. Interstellar<br>
-              5. The Terminator
-            </p>
-          </div>
+          </div> -->
         </article>
       </div>
     </div>

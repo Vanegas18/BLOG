@@ -4,6 +4,11 @@ const registroUsuariosSchema = new Schema(
   {
     nombre: { type: String, required: true },
     apellido: { type: String, required: true },
+    usuario: {
+      type: String,
+      required: true,
+      unique: [true, "El usuario debe ser único"],
+    },
     correo: {
       type: String,
       required: true,

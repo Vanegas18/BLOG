@@ -63,7 +63,7 @@ body {
   margin-top: 15px;
   margin-bottom: 10px;
   margin-right: 20px;
-  background-color: rgb(105, 105, 105);
+  background-color: rgb(255, 255, 255);
   border: 1px solid rgb(82, 81, 81);
   transition: all 0.3s ease;
 }
@@ -74,8 +74,8 @@ body {
 }
 
 .register__nav i {
-  font-size: 40px;
-  margin-top: 4px;
+  font-size: 30px;
+  margin-top: 9px;
   margin-bottom: 10px;
   margin-left: 1px;
 }
@@ -156,6 +156,27 @@ body {
   cursor: pointer;
 }
 
+.closeLogin{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cuentaa{
+  margin-top: 10px;
+}
+
+.cuentaa a{
+  color: blue;
+  transition: all 0.3s ease;
+}
+
+.cuentaa a:hover{
+  opacity: 0.5;
+}
+
 input {
   margin-bottom: 20px;
   padding: 10px;
@@ -209,7 +230,7 @@ input {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  margin-left: 300px;
+  margin-left: 400px;
   margin-top: 20px;
   font-size: 20px;
 }

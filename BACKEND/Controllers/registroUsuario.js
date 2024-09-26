@@ -21,11 +21,13 @@ export async function getUsuarioById(req, res) {
 }
 
 export async function postUsuario(req, res) {
-  const { nombre, apellido, correo, fechaNacimiento, contraseña } = req.body;
+  const { nombre, apellido, usuario, correo, fechaNacimiento, contraseña } =
+    req.body;
   try {
     const Usuario = await new Usuarios({
       nombre,
       apellido,
+      usuario,
       correo,
       fechaNacimiento,
       contraseña,
@@ -75,5 +77,3 @@ export async function deleteUsuario(req, res) {
     res.status(500).json(`Error: ${error}`);
   }
 }
-
-
