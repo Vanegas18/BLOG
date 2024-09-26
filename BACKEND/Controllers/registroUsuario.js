@@ -1,5 +1,6 @@
 import Usuarios from "../Models/registroUsuario.js";
 import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
 
 export async function getUsuarios(req, res) {
   try {
@@ -73,6 +74,28 @@ export async function deleteUsuario(req, res) {
       return res.status(404).json("Usuario no encontrado");
     }
     res.status(200).json("Usuario eliminado correctamente");
+  } catch (error) {
+    res.status(500).json(`Error: ${error}`);
+  }
+}
+
+export async function loginUsuario(req, res) {
+  const { correo, contraseña } = req.body;
+  try {
+    const user = await Usuarios.findOne({ correo });
+    if (!user) {
+      return res.status(404).json("Usuario no encontrado");
+    }
+
+    const isMatch = await bcrypt.compare(contraseña, user.contraseña);
+    if (!isMatch) {
+      return res.status(400).json("Contraseña incorrecta");
+    }
+
+    const token = jwt.sign({ userId: user._id }, "secretKey", {
+      expiresIn: "1h",
+    });
+    res.status(200).json(token);
   } catch (error) {
     res.status(500).json(`Error: ${error}`);
   }
